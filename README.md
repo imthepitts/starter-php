@@ -1,6 +1,6 @@
-# Welcome to the PHP Guild!
+# Welcome to the PHP Starter!
 
-As members of the PHP guild, you will be completing the challenges of TwilioQuest using PHP, the language that powers the web.  This project is pre-configured with some useful Twilio functionality using the [Twilio helper library for PHP](https://github.com/twilio/twilio-php).
+This project is pre-configured with some useful Twilio functionality using the [Twilio helper library for PHP](https://github.com/twilio/twilio-php).
 
 ## Setting Up
 If you're in need of a PHP development environment, the quickest way to get one set up is to use [MAMP on OS X](http://www.mamp.info/en/index.html) or [XAMPP on Windows (or Linux)](http://www.apachefriends.org/en/xampp-windows.html).  Follow the instructions on their respective websites to download and install their software.
@@ -36,10 +36,7 @@ Now your project should be all set!
 
 If you successfully started your MAMP or XAMPP server, it is likely to be running locally on [port 8080](http://localhost:8080/).  Navigate to [this page](http://localhost:8080/), and you should find a UI which looks similar to this:
 
-![php guild](http://demo.kevinwhinnery.com/upload/Welcome_to_the_PHP_Guild%21-20130827-143920.png)
-
 Try out the voice and messaging demos by entering your mobile phone number and pressing the button.  If you receive a voice call and a text message from your Twilio number, you're all set!
 
-## Begin Questing!
-This is but your first step into a larger world.  [Return to TwilioQuest](http://quest.twilio.com) to continue your adventure.  Huzzah!
-
+## Begin Learning Twilio!
+This is your first step in the Twilio learning program.  Return to the site to continue on.  Huzzah!
