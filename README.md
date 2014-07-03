@@ -34,7 +34,7 @@ Now your project should be all set!
 
 ## Running the Application
 
-If you successfully started your MAMP or XAMPP server, it is likely to be running locally on [port 8080](http://localhost:8080/).  Navigate to [this page](http://localhost:8080/), and you should find a UI which looks similar to this:
+If you successfully started your MAMP or XAMPP server, it is likely to be running locally on [port 8080](http://localhost:8080/).  Navigate to [this page](http://localhost:8080/), and you should find a UI.
 
 Try out the voice and messaging demos by entering your mobile phone number and pressing the button.  If you receive a voice call and a text message from your Twilio number, you're all set!
 

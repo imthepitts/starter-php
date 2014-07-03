@@ -11,7 +11,7 @@ $client = new Services_Twilio($TWILIO_ACCOUNT_SID, $TWILIO_AUTH_TOKEN);
 $message = $client->account->sms_messages->create(
     $TWILIO_NUMBER, 
     $_POST['to'], 
-    'Good luck on your Twilio quest!'
+    'Have fun with your Twilio development!'
 );
 
 // Send a string reply back
