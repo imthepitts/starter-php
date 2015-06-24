@@ -8,7 +8,7 @@ include 'config.php';
 $client = new Services_Twilio($TWILIO_ACCOUNT_SID, $TWILIO_AUTH_TOKEN);
 
 // Send a text message
-$message = $client->account->sms_messages->create(
+$message = $client->account->messages->sendMessage(
     $TWILIO_NUMBER, 
     $_POST['to'], 
     'Have fun with your Twilio development!'
