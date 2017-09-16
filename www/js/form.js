@@ -10,7 +10,7 @@ $('form button').on('click', function(e) {
 
     // Based on the selected demo, fire off an ajax request
     // We expect just a string of text back from the server (keeping it simple)
-    var url = currentDemo == 'message' ? '/message.php' : '/call.php';
+    var url = currentDemo == 'message' ? 'message.php' : 'call.php';
     $.ajax(url, {
         method:'POST',
         dataType:'text',

@@ -1,17 +1,19 @@
 <?php
 
 // Load the Twilio helper library and our configuration file
-include 'Services/Twilio.php';
+include __DIR__ . '/Twilio/autoload.php';
 include 'config.php';
 
-// Create an authenticated REST client
-$client = new Services_Twilio($TWILIO_ACCOUNT_SID, $TWILIO_AUTH_TOKEN);
+use Twilio\Rest\Client;
 
-// Make an outbounf call
-$call = $client->account->calls->create(
-    $TWILIO_NUMBER, 
+// Create an authenticated REST client
+$client = new Client($TWILIO_ACCOUNT_SID, $TWILIO_AUTH_TOKEN);
+
+// Make an outbound call
+$call = $client->calls->create(
     $_POST['to'], 
-    'http://twilio-elearning.herokuapp.com/starter/voice.php'
+    $TWILIO_NUMBER, 
+    array('url' => 'http://twilio-elearning.herokuapp.com/starter/voice.php')
 );
 
 // Send a string reply back

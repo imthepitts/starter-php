@@ -1,17 +1,19 @@
 <?php
 
 // Load the Twilio helper library and our configuration file
-include 'Services/Twilio.php';
+include __DIR__ . '/Twilio/autoload.php';
 include 'config.php';
 
+use Twilio\Rest\Client;
+
 // Create an authenticated REST client
-$client = new Services_Twilio($TWILIO_ACCOUNT_SID, $TWILIO_AUTH_TOKEN);
+$client = new Client($TWILIO_ACCOUNT_SID, $TWILIO_AUTH_TOKEN);
+
 
 // Send a text message
-$message = $client->account->messages->sendMessage(
-    $TWILIO_NUMBER, 
+$message = $client->messages->create(
     $_POST['to'], 
-    'Have fun with your Twilio development!'
+    array('from' => $TWILIO_NUMBER, 'body' => 'Have fun with your Twilio development!')
 );
 
 // Send a string reply back
